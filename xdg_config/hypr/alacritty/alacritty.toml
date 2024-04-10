@@ -1,0 +1,51 @@
+import = [
+	"~/.config/alacritty/rose-pine.toml",
+]
+live_config_reload = true
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 11.0
+
+[font.bold]
+family = "IosevkaTerm Nerd Font Propo"
+style = "Bold"
+
+[font.bold_italic]
+family = "IosevkaTerm Nerd Font Propo"
+style = "Bold Italic"
+
+[font.italic]
+family = "IosevkaTerm Nerd Font Propo"
+style = "Italic"
+
+[font.normal]
+family = "IosevkaTerm Nerd Font Propo"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Alt"
+
+[window]
+opacity = 0.8
+
+[window.padding]
+x = 10
+y = 10
+
+[[hints.enabled]]
+regex = "[^ ]+\\.rs:\\d+:\\d+"
+command = { program = "code", args = [ "--goto" ] }
+mouse = { enabled = true }
