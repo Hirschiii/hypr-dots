@@ -24,7 +24,6 @@
     // Modules Left
     "modules-left": [
         "custom/exit",
-        "custom/cliphist",
         "idle_inhibitor",
 		"group/hardware",
         "hyprland/window",
